@@ -12,6 +12,8 @@ namespace googleMapTest1.Controllers
         // GET: /HelloWorld/
         public ActionResult Index(float lat, float log)
         {
+            ViewBag.lat = 0;
+            ViewBag.log = 0;
             ViewBag.lat = lat;
             ViewBag.log = log;
             return View();
